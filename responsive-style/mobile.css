@@ -1,5 +1,9 @@
 /* Responsive Style for Mobile Media */
 @media only screen and (max-width: 400px) {
+    .available-area .availableDesc, .stable-area p{
+        padding: 5px 20px;
+    }
+    .codeDescription p{padding: 0 20px}
     .navigation-area .menu, ul, li{
         float:none;
         width: 100%;
@@ -7,18 +11,30 @@
 
 
          /* Mobile Menu */
+         .navigation-area .menu{
+            position: relative;
+            width: 100%;
+            float: none;
+            z-index: 999;
+        }
+         .mobileBtn{display: block ;position: fixed;}
     .navigation-area .menu ul{
+        position: fixed;
+        background:rgba(0, 0, 0, 0.336);
+        top: 40px;
+        right: 70px;
         width: 100px;
         float: right;
         margin: 0;
         padding: 0;
-        padding-top: 50px;
+        padding-top: 0px;
         margin-right: -70px;
+        display: none;
+        z-index: 55555;
     }
     .navigation-area .logo{
         width: 50%;
         float: left;
-        background: tan;
     }
 
     .navigation-area .logo img{
@@ -37,7 +53,7 @@
 
     .description h1{
         font-size: 2em;
-        padding-top: 100px;
+        padding-top: 10px;
     }
 
     .smartphone img{
@@ -45,13 +61,18 @@
         width: 100px;
         margin: auto;
     }
+    .description .loadButton{
+        padding-bottom:50px;
+    }
 
     .zigzag-smartphone{
         display:none;
     }
 
 
-
+    .available-area img{
+        padding-top: 20px;
+    }
 
 
 
@@ -152,7 +173,7 @@
 
 
     .available-area{
-        background-image: url(img/hero-bg.png);
+        background-image: url(hero-bg.png);
         padding: 0;
         display: block;
         text-align: center;
@@ -267,4 +288,15 @@ footer .social-icons .icons{
  footer .social-icons .icons a{
    display: inline-block;
  }
+ .stable-area .iconBox2 .row2 .iconBox img{
+     padding-right: 30px;
+ }
+
+ .stable-area{
+    margin-top: -80px;
+}
+
+.stable-area h1{
+    margin-bottom: 0;
+}
   }
