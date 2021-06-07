@@ -1,0 +1,363 @@
+/*=================================================
+                 Common Style
+===================================================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+button{
+    cursor: pointer;
+}
+/*=================================================
+                 Navigation  Style
+===================================================*/
+.navigation-area{
+    z-index:1;
+    background: url(img/hero-bg.png);
+    position: relative;
+}
+.navigation-area .logo{
+    padding-top: 20px;
+    width: 20%;
+    float: left;
+}
+.navigation-area .logo img{
+   float: left;
+   display: block;
+   padding: 1px 0;
+   width: 100px;
+   float:right;
+}
+.navigation-area .menu{
+    width: 80%;
+    float: left;
+}
+
+.navigation-area .menu ul{
+    padding-top: 20px;
+    float: right;
+    padding-right: 100px;
+}
+.navigation-area .menu ul li{
+    list-style-type: none;
+    float: left;
+}
+.navigation-area .menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 13px 20px;
+}
+.description{
+    max-width: 500px;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    padding-top: 100px;
+    
+}
+.description h1{
+    font-size: 3em;
+    padding-top: 100px;
+}
+
+.loadButton button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.loadButton a+a button{
+    background: rgba(0, 0, 0, 0);
+    border: solid 1px #fff;
+    margin-left: 20px;
+}
+.description .loadButton{
+    padding-bottom:100px;
+}
+
+
+
+.smartphone img{
+    display: block;
+    width: 200px;
+    margin: auto;
+}
+
+/*=================================================
+                 Zigzag  Style
+===================================================*/
+.zigzag-area{
+    position: relative;
+    z-index:1;
+    width: 100%;
+    background-image: url(img/upper-Img.png);
+    background-size: 100% 100%;
+    margin-top: -150px;
+}
+.zigzag-smartphone{
+    width: 45%;
+    float: left;
+    margin-top: 350px;
+    padding-right: 40px;
+    background: gray;
+}
+.zigzag-smartphone img{
+    width: 200px;
+    display: block;
+    float: right;
+}
+.cardsContainer{
+    width: 50%;
+    padding: 0 20px;
+    float: left;
+    padding-top: 230px;
+}
+.cardsContainer .row1{
+    padding-bottom: 40px;
+    float:right;
+}
+
+.cardsContainer .row1 .card:first-child{
+    margin-right: 40px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.cardsContainer .row1::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.cardsContainer .row2::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.cardsContainer .row2{
+    padding-bottom: 40px;
+    float: right;
+}
+
+.cardsContainer .row2 .card:first-child{
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-left: 40px
+}
+
+.card{
+    background: #ffffff;
+    text-align: center;
+    width: 200px;
+    height: 230px;
+    float: right;
+    padding: 10px 20px;
+    box-shadow: 2px 2px 4px rgb(238, 236, 236),
+                -2px -2px 4px rgb(238, 236, 236);
+    border-radius: 5px;
+}
+/*=================================================
+                 Stable Area  Style
+===================================================*/
+.stable-area{
+    padding-top: 100px;
+}
+.stable-area .row1{
+    width: 40%;
+    float: left;
+    text-align: right;
+    line-height: 30px;
+}
+.stable-area .row1 h1, p{
+   margin-bottom: 50px;
+}
+.stable-area .row1 button{
+    border:none;
+    background: #33d2fd;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+}
+.stable-area .row2{
+    width: 50%;
+    float: right;
+}
+.stable-area .row2 .iconBox::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.stable-area .row2 .iconBox{
+    max-width: 500px;
+    background: #ffffff;
+    padding: 20px 0;
+    margin-top: 10px;
+    box-shadow: 2px 2px 4px gray;
+}
+.stable-area .row2 .iconBox img{
+   float: left;
+   display: block;
+   padding:0 20px;
+}
+.stable-area .row2 .iconBox h5{
+    float: left;
+}
+
+/* Code Illustration */
+.code-illustration{
+    padding-top: 100px;
+}
+.code-illustration .codeImage{
+    width: 50%;
+    float: left;
+}
+.code-illustration .codeImage img{
+    width: 80%;
+    float: right;
+}
+
+.codeDescription{
+    width: 45%;
+    float: right;
+}
+.codeDescription h1, p, .phoneList, span{
+    margin-top: 30px;
+}
+
+
+/*=================================================
+                 App Download Area  Style
+===================================================*/
+.available-area{
+    background-image: url(img/hero-bg.png);
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+.available-area .smartPhoneContainer{
+    width: 50%;
+    float:left;
+    padding:5%;
+}
+.available-area .smartPhoneContainer img{
+    max-width: 200px;
+    float:right;
+}
+.available-area .availableDesc{
+    width: 50%;
+    float: right;
+    /* padding-left: 80px; */
+}
+
+.available-area button{
+  background: #f8467a;
+  border: none;
+  padding: 16px 30px;
+  border-radius: 5px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: -40px;
+  transform: translate(-50%,-50%);
+}
+
+
+
+
+
+
+
+
+/* Footer Area Style */
+.topFooter{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.topFooter .row{
+    width: 25%;
+    float: left;
+}
+
+.topFooter .row ul li{
+    list-style-type: none;
+}
+.topFooter .row ul li a{
+    text-decoration: none;
+    color: #000;
+    line-height: 35px;
+}
+.topFooter .touchDesc{
+    text-align: center;
+    padding-top: 150px;
+}
+
+.topFooter h1{
+    text-align: center;
+    padding-top: 60px;
+}
+
+/* Bottom Footer Area Style */
+footer::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+footer{
+    background: #233148;
+    padding: 20px 0;
+    color: rgb(224, 219, 219);
+}
+footer p{
+  margin: 0;
+  padding:0;
+  width: 30%;
+  float: left;
+  text-align: right;
+}
+footer .social-icons{
+   width: 45%;
+   float: right;
+}
+
+footer .social-icons .icons{
+   width: 40%;
+   float: right;
+}
+
+footer .social-icons .icons a{
+    color: #fff;
+}
+
+footer .social-icons .icons a:not(:nth-child(5)){
+    padding-right: 20px
+}
+
+/* Mobile Menu */
+.mobileMenu{
+    float: right;
+    border: none;
+    padding: 10px 16px;
+    background:#1ceaf5;
+    border: solid 1px #fff;
+    color: #000;
+    display: block;
+    font-weight: 800;
+}
